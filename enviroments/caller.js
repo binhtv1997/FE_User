@@ -6,6 +6,7 @@ export const GET_AXIOS = async (endpoint) => {
   const instance = axios.create({
     baseURL: endpoint
   });
+  console.log(123)
   const token = await AsyncStorage.getItem("jwt");
   instance.defaults.headers.common['Authorization'] = "Bearer  " + token;
   instance.defaults.headers.common['Content-Type'] = "application/json";
