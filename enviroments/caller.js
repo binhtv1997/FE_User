@@ -13,6 +13,8 @@ export const GET_AXIOS = async (endpoint) => {
 }
 export const GET_AXIOS_PARAM = async (endpoint, body = {}) => {
   console.log(body)
+  console.log(body)
+
   const instance = axios.create({
     baseURL: endpoint,
   });
